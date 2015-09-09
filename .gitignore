@@ -59,3 +59,7 @@ docs/_build/
 target/
 
 secret.py
+
+#Sublimetext
+liveblog.sublime-project
+liveblog.sublime-workspace
