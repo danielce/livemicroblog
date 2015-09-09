@@ -37,6 +37,8 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'core',
+    'rest_framework',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -108,5 +110,11 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static', 'static_root')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static', 'media')
 
 STATICFILES_DIRS = (
-                os.path.join(BASE_DIR, 'static'),
+                os.path.join(BASE_DIR, 'static', 'static_dirs'),
                 )
+
+#Rest Framework settings
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': ('rest_framework.permissions.AllowAny',),
+    'PAGE_SIZE': 10
+}

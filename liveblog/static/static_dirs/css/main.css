@@ -1,0 +1,21 @@
+.bottom-padded{
+	margin-bottom: 15px;
+}
+.top-padded{
+	padding-top: 15px;
+}
+.hidden{
+	display:none;
+}
+.text-white{
+	color:#fff;
+}
+.white{
+	background-color: #fff;
+}
+body {
+	background-color: #ddd;
+}
+input{
+	width:500px;
+}
